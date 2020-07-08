@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Karuskrokro\source\repos\Kata.API\Kata.API\Kata.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kata.Repository.Contracts\Kata.Repository.Contracts.csproj" />
+    <ProjectReference Include="..\Kata.Repository\Kata.Repository.csproj" />
+    <ProjectReference Include="..\Kata.Services\Kata.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
